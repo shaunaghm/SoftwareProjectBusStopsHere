@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700i" rel="stylesheet">
+	<script src="https://maps.googleapis.com/maps/api/js?sensor=false" type="text/javascript"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<title>Timetable</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/Bus.css">
+	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+	<script src="/stopfind.js></script>
+	<script src="/map.js"></script>
+</head>
+ <body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<div class="container">
+  	<a class="navbar-brand" href="../index.html">The Bus Stops Here</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="	false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link active" href="../index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../About.html">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="../Contact.html">Contact</a>
+      </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+        <li><a href="../Signup.html">Sign up <i class="fa fa-user-plus"></i></a></li>
+       	<li><a href="../login.html">Login <i class="fa fa-user"></i></a></li>
+      </ul>
+  </div>
+  </div>
+  </div>
+</nav>
+<br>
+
+ 		<div class="boxed">
+      <button id="addFavouriteButton">Add Stop to Favourites</button>
+ 			<table id="times-table">
+ 			<tr>
+ 				<td>Bus route</td>
+ 				<td>Minutes away</td>
+        <td>Expected Arrival Time</td>
+        <td>Arrived Yesterday at</td>
+        <td>Arrived Last Week at</td>
+        <td>Scheduled Arrival Time </td>
+ 			</tr>
+	<br/><a href="/map.html"> Find Your Stop on the Map <i class="fa fa-user"></i></a>
+ 			</table>
+	    </div>
+</body>
+  <script src="/timetable.js" ></script>
+</html>

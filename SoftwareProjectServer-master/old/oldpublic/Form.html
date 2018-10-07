@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+  	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  	<script src="https://maps.googleapis.com/maps/api/js?sensor=false" type="text/javascript"></script>
+	<title>Route Selector</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	
+	<link rel="stylesheet" type="text/css" href="/Bus.css">
+
+	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700i" rel="stylesheet">
+	
+</head>
+
+ <body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<div class="container">
+  	<a class="navbar-brand" href="/index.html">The Bus Stops Here</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="	false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link active" href="/index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/About.html">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="/Contact.html">Contact</a>
+      </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+        <li><a href="/Signup.html">Sign up <i class="fa fa-user-plus"></i></a></li>
+       	<li><a href="/login.html">Login <i class="fa fa-user"></i></a></li>
+      </ul>
+  </div>
+  </div>
+  </div>
+</nav>
+<br>
+ 		<div class="boxed" onbeforeunload='resetForm()'>
+	      <form>
+	      	<label>Please select your route:</label>
+	        	<select  onchange="selectRoute(); route();" id="SelectRoute" name = "dropdown" style = "visibility:hidden">
+					<option value = "-" selected>-</option>
+	            	<option value = "66">66</option>
+	            	<option value = "67">67</option>
+	            	<option value = "11">11</option>
+	         </select>
+	         <br><br>
+	        <label>Please Select your direction:</label>
+	        	<select onchange="selectDirection(); route()" id="SelectDirection" name = "dropdown" style = "visibility:hidden">
+	        	<option value = "-" selected>-</option>
+	            <option value = "d0">One Way</option>
+	            <option value = "d1">The other</option>
+	         </select>
+	         <br><br>
+	         <label>Please Select your stop:</label>
+	        	<select  id="SelectStop" name = "dropdown" style = "visibility:hidden">
+	            <option value = "" selected>-</option>
+                </select>
+              <hr>
+              <table id="times-table"></table>
+              <br>
+              </form>
+	        <button onclick = 'selectStop()' class="btn btn-default btn-lg"> <i class="fas fa-bus"></i>Get Going!</button>
+
+	        <div id="map-canvas"></div>
+	        <script async defer
+	          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBdGS4-Yw5huT-N5ss32SlzBo07CoD9GAg&callback=initMap">
+	        </script>
+
+	  </div>
+	
+</body>
+<script src="/map.js"></script>
+<script src="/stopfind.js"></script>
+
+</html>

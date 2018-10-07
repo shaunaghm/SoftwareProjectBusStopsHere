@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>StopID</title>
+    <script src="StopRoute.js"></script>
+
+</head>
+<body>
+<h2>Bus due at</h2>
+<form>
+    <br>
+    <label>Please select your stop:</label>
+    <select ondblclick ="getAllStopIDs()"  onchange="getStopIDTableData()" id="selectstopid" name = "dropdown">
+        <option value = "-" selected>-</option>
+        <option value = "406">406</option>
+        <option value = "329">329</option>
+        <option value = "88">88</option>
+    </select>
+    <label>Please select your route:</label>
+    <select onchange="getStopIDTableData()"  id="selectroute" name = "dropdown">
+        <option value = "-" selected>-</option>
+        <option value = "66">66</option>
+        <option value = "66A">66A</option>
+        <option value = "66N">66N</option>
+        <option value = "66X">66X</option>
+    </select>
+    <br>
+
+    <h2>Bus in </h2>
+    <div>
+        <table  id="StopIDTable" contenteditable="false">
+
+            <tr contenteditable="false">
+                <th >Route</th>
+                <th >Arrival </th>
+                <th >Due in </th>
+                <th >Scheduled </th>
+                <th >Destination</th>
+                <th>Additional</th>
+            </tr>
+            <tr contenteditable="false">
+                <th ></th>
+                <th > Time</th>
+                <th > (mins)</th>
+                <th > Time</th>
+                <th ></th>
+                <th>   Info</th>
+            </tr>
+
+            <tr id="StopIDEntry">
+                <td contenteditable="false">-</td>
+                <td  contenteditable="false">-</td>
+                <td  contenteditable="false" >-</td>
+                <td  contenteditable="false" >-</td>
+                <td  contenteditable="false" >-</td>
+                <td  contenteditable="false" >-</td>
+
+            </tr>
+        </table>
+    </div>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Route Selector</title>
+  <% include partials/links.ejs %>
+</head>
+<body>
+  <% include partials/nav.ejs %>
+  <br>
+  <div  class="container-fluid" onbeforeunload='resetForm()'>
+    <div class="container">
+      <h2 id="stopfinderHeader"> Loading... </h2>
+      <p class="text-center"></p>
+      <hr>
+      <div id="stopfindMainDiv" class="row"  style = "visibility:hidden" >
+        <div id= "formbox" class="col-md-4" >
+        	<br>
+        	<br>
+	      <form>
+	      	<label>Select your route:</label>
+	        	<select id="SelectRoute" name = "dropdown" style = "visibility:hidden">
+					<option value = "-" selected>-</option>
+	            	<option value = "66">66</option>
+	            	<option value = "67">67</option>
+	            	<option value = "11">11</option>
+	         </select>
+	         <br><br>
+	        <label >Select your direction:</label>
+	        	<select id="SelectDirection" name = "dropdown" style = "visibility:hidden">
+	        	<option value = "-" selected>-</option>
+	            <option value = "d0">One Way</option>
+	            <option value = "d1">The other</option>
+	         </select>
+	         <br><br>
+	         <label>Select your stop:</label>
+	        	<select  id="SelectStop" name = "dropdown" style = "visibility:hidden">
+	            <option value = "" selected>-</option>
+                </select>
+              <br>
+              </form>
+              <br>
+	        <button id="goButton" class="btn btn-default btn-lg"> <i class="fas fa-bus"></i>Get Going!</button>
+        	<br>
+        	<br>
+        </div>
+        <div class="col-md-1">
+        </div>
+        <br><br>
+        <div class="col-md-7">
+	        <div id="map-canvas"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="bus.js"></script>  
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBdGS4-Yw5huT-N5ss32SlzBo07CoD9GAg&callback=initMap" async defer ></script>
+
+</body><!-- 
+<script src="/map.js"></script>
+<script src="/stopfind.js"></script> -->
+
+</html>

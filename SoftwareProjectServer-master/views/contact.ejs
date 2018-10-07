@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact</title>
+  <% include partials/links.ejs %>
+</head>
+
+<body>
+  <% include partials/nav.ejs %>
+    <div class="container-fluid">
+        <div class="container">
+          <h2 class="text-center">Contact</h2>
+          <p class="text-center"></p>
+          <hr>
+
+            <div class="row">
+                <div class="col-md-5">
+                    <fieldset>
+                        <h4> Please enter your details </h4>
+                        <br>
+                        <div class="form-group">
+                            <input type="email" id="emailinputsignin" class="form-control input-lg" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" id="passwordinputsignin" class="form-control input-lg" placeholder="Email Address">
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="col-md-2">
+                </div>
+                <br><br>
+                <div class="col-md-5">
+                    <fieldset>
+                        <h4> Please enter comments below </h4>
+                        <br>
+                        <div class="form-group">
+                            <textarea rows="4" cols="50" class="form-control input-lg" placeholder="Comments..."></textarea>
+                        <div>
+                            <br>
+                            <input id="buttonsignup" type="submit" class="btn btn-lg btn-primary"   value="Submit">
+                            <h5 id="signupMessage" class="button-message"></h5>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+    </div>
+  <script src="bus.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Log in or Create account </title>
+   <% include partials/links.ejs %>
+</head>
+<body>
+  <% include partials/nav.ejs %>
+  <div class="container-fluid">
+    <div class="container">
+      <h2 id = "account-title"> Log in or create an account</h2>
+      <p class="text-center"></p>
+      <hr>
+      <div class="row">
+        <div class="col-md-5">
+          <fieldset>                          
+            <h4 > Login to your account </h4>
+            <br>
+            <div class="form-group">
+              <input type="email" id="emailinputsignin" class="form-control input-lg" placeholder="Email Address">
+            </div>
+            <div class="form-group">
+              <input type="password" id="passwordinputsignin" class="form-control input-lg" placeholder="Password">
+            </div>
+            <div>
+              <input id="buttonsignin" type="submit" class="btn btn-lg btn-primary" value="Sign In">
+              <h6 id="signinMessage" class="button-message"></h6>
+            </div>                
+          </fieldset>
+        </div>
+        <div class="col-md-2">
+        </div>
+        <br><br>
+        <div class="col-md-5">
+          <fieldset>                          
+            <h4> Create an account </h4>             
+            <br>
+            <div class="form-group">
+              <input type="text" id="usernameinputsignup" class="form-control input-lg" placeholder="Username">
+            </div>
+            <div class="form-group">
+              <input type="email"  id="emailinputsignup" class="form-control input-lg" placeholder="Email Address">
+            </div>
+            <div class="form-group">
+              <input type="password" id="passwordinputsignup" class="form-control input-lg" placeholder="Password">
+            </div>
+            <div class="form-group">
+              <input type="password" id="passwordinputsignup2" class="form-control input-lg" placeholder="Repeat Password">
+            </div>
+            <div>
+              <input id="buttonsignup" type="submit" class="btn btn-lg btn-primary"   value="Register">
+              <h6 id="signupMessage" class="button-message"></h6>
+            </div>
+          </fieldset>
+        </div>  
+      </div>
+    </div>
+    <p class="text-center">
+<!--             <small id="passwordHelpInline" class="text-muted"> Developer:<a href="http://www.psau.edu.ph/"> Pampanga state agricultural university ?</a> BS. Information and technology students @2017 Credits: <a href="https://v4-alpha.getbootstrap.com/">boostrap v4.</a></small> -->
+        </p>
+    </div>
+    <script src="/bus.js"></script>
+</body>
+</html>

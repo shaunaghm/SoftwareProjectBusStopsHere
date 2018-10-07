@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Find Stop</title>
+
+</head>
+<body>
+<h2>Bus due at</h2>
+<form>
+    <br>
+    <label>Please select your route:</label>
+    <select onchange="selectRoute()" id="selectroute" name = "dropdown" style = "visibility:hidden">
+        <option value = "-" selected>-</option>
+        <option value = "s66">66</option>
+        <option value = "s67">67</option>
+    </select>
+    <br>
+    <label  id = "stopText"></label>
+    <select   onchange="selectStop()"  id="selectstopid" name = "dropdown" style = "visibility:hidden">
+        <option value = "-" selected>-</option>
+    </select>
+    <br>
+
+    <h2></h2><!-- Bus in  -->
+    <div>
+        <table  id="StopIDTable" contenteditable="false" style = "visibility:hidden">
+
+            <tr contenteditable="false">
+                <th >Route</th>
+                <th >Arrival </th>
+                <th >Due in </th>
+                <th >Scheduled </th>
+                <th >Destination</th>
+                <th>Additional</th>
+            </tr>
+            <tr contenteditable="false">
+                <th ></th>
+                <th > Time</th>
+                <th > (mins)</th>
+                <th > Time</th>
+                <th ></th>
+                <th>   Info</th>
+            </tr>
+
+            <tr id="StopIDEntry">
+                <td contenteditable="false">-</td>
+                <td  contenteditable="false">-</td>
+                <td  contenteditable="false" >-</td>
+                <td  contenteditable="false" >-</td>
+                <td  contenteditable="false" >-</td>
+                <td  contenteditable="false" >-</td>
+
+            </tr>
+        </table>
+    </div>
+</form>
+
+</body>
+</html>

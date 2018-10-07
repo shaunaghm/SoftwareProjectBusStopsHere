@@ -1,0 +1,55 @@
+<h1>Welcome to My Awesome App</h1>
+<div id="firebaseui-auth-container"></div>
+<div id="loader">Loading...</div>
+
+ui.start('#firebaseui-auth-container', {
+  signInOptions: [
+    // List of OAuth providers supported.
+    firebase.auth.GoogleAuthProvider.PROVIDER_ID
+  ],
+  // Other config options...
+}
+
+ui.start('#firebaseui-auth-container', {
+  signInOptions: [
+    firebase.auth.EmailAuthProvider.PROVIDER_ID
+  ],
+  // Other config options...
+});
+
+ui.start('#firebaseui-auth-container', {
+  signInOptions: [
+    firebase.auth.EmailAuthProvider.PROVIDER_ID
+  ],
+  // Other config options...
+});
+
+
+var firebase = require('firebase');
+var firebaseui = require('firebaseui');
+
+<script src="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.js"></script>
+<link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.css" />
+
+ui.start('#firebaseui-auth-container', {
+  signInOptions: [
+    {
+      provider: firebase.auth.EmailAuthProvider.PROVIDER_ID,
+      requireDisplayName: false
+    }
+  ]
+});
+
+<script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDAtxW4gA1iQ2k2QMHTaNd-EaJE8dcGXJg",
+    authDomain: "softwareproject-e4114.firebaseapp.com",
+    databaseURL: "https://softwareproject-e4114.firebaseio.com",
+    projectId: "softwareproject-e4114",
+    storageBucket: "softwareproject-e4114.appspot.com",
+    messagingSenderId: "549994885429"
+  };
+  firebase.initializeApp(config);
+</script>

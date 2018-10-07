@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The Bus Stops Here</title>
+  <% include partials/links.ejs %>
+</head>
+<body>
+<% include partials/nav.ejs %>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-6">
+            <h1 id="heads">Sign Up</h1>
+            <p id="heads">Please fill in this form to create an account.</p>
+            <hr>
+            <label for="Username"><b>First Name</b></label>
+            <input type="text" id="usernameinput" placeholder="Enter Username" name="First-Name" required>
+            <label for="email"><b>Email</b></label>
+            <input type="text" id="emailinput" placeholder="Enter Email" name="email" required>
+            <label for="psw"><b>Password</b></label>
+            <input type="password" id="passwordinput" placeholder="Enter Password" name="psw" required>
+            <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms and Privacy</a>.</p>
+            <button type="button" class="cancelbtn">Cancel</button>
+            <button type="submit" id="signupbutton" class="signupbtn">Sign Up</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-6">
+            <h1 id="heads">Sign In</h1>
+            <p id="heads">Please enter your email and password to sign in</p>
+            <hr>
+            <div class="container">
+                <input type="text" id="emailinput" placeholder="Enter Email" name="email" required>
+                <input type="password" id="passwordinput" placeholder="Enter Password" name="psw" required>
+                <button type="button" id="signinbutton" >Sign in</button>
+                <button type="button" id="signoutbutton" >Sign out</button>
+            </div>
+        </div>
+    </div>
+</div><!-- 
+<script src= "signin.js"></script>
+<script src= signup.js></script> -->
+</body>
+</html>

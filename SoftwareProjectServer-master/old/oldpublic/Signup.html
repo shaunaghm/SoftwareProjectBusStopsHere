@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Sign Up!</title>
+  <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/Bus.css">
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700i" rel="stylesheet">
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+  <a class="navbar-brand" href="/index.html">The Bus Stops Here</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link active" href="/index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/About.html">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="/Contact.html">Contact</a>
+      </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+        <li><a href="/Signup.html">Sign up <i class="fa fa-user-plus"></i></a></li>
+        <li><a href="/login.html">Login <i class="fa fa-user"></i></a></li>
+      </ul>
+  </div>
+  </div>
+</nav>
+<div class="container">
+    <h1 id="heads">Sign Up</h1>
+    <p id="heads">Please fill in this form to create an account.</p>
+    <hr>
+    <label for="Username"><b>First Name</b></label>
+    <input type="text" id="usernameinput" placeholder="Enter Username" name="First-Name" required>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" id="emailinput" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" id="passwordinput" placeholder="Enter Password" name="psw" required>
+
+    <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms and Privacy</a>.</p>
+
+
+      <button type="button" class="cancelbtn">Cancel</button>
+
+      <button type="submit" id="signupbutton" class="signupbtn">Sign Up</button>
+  </div>
+</body>
+<script src= signup.js></script>
+</html>

@@ -1,0 +1,252 @@
+body{
+	background-image: url("https://images.unsplash.com/photo-1452798991096-382940996d40?ixlib=rb-0.3.5&s=ee394736162c7ce43da21fe78d7b9db2&auto=format&fit=crop&w=752&q=80");
+	background-size: cover;
+	background-position: center;
+	font-family: Lato;
+
+}
+html{
+	height: 100%;
+}
+
+label{
+  color: white;
+}
+
+#map-canvas {
+  height: 350px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 4px inset grey;
+ }
+
+
+Grid-container2{
+  display: inline-grid;
+  grid-template-columns: auto auto auto auto auto;
+  padding: 50px 10px;
+  margin: auto;
+  padding-left: 400px;
+ 
+}
+
+#image{
+  height: 110px;
+  width: 110px;
+}
+
+.times-table{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#formbox{
+  border: 4px inset grey;
+  width:100%;
+  text-align: center;
+  background-color: rgba(121,205,215,0.2);
+}
+
+.times-table td, .times-table th{
+  border: 1px solid grey;
+}
+
+
+#heads{
+  color: white;
+}
+.heads{
+	color: white;
+}
+#content{
+	text-align: center;
+	padding-top: 25%;
+	text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+				 0px 8px 13px rgba(0,0,0,0.1),
+				 0px 18pc 23px rgba(0,0,0,0.1),
+}
+#Login{
+  text-align: center;
+  color: white;
+  text-shadow: 
+      0px 4px 3px rgba(0,0,0,0.4),
+      0px 8px 13px rgba(0,0,0,0.1),
+      0px 18pc 23px rgba(0,0,0,0.1),
+}
+
+#para-1{/*
+  background-color: white;*/
+    color: white;
+    text-align: center;/*
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+      0px 8px 13px rgba(0,0,0,0.1),
+      0px 18pc 23px rgba(0,0,0,0.1),*/
+}
+
+#Para-1{/*
+  background-color: white;*/
+  color: white;
+    text-align: center;/*
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+      0px 8px 13px rgba(0,0,0,0.1),
+      0px 18pc 23px rgba(0,0,0,0.1),*/
+}
+
+
+hr{
+	width: 400px;
+	border-top: 1px solid #f8f8f8;
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+input[type=text], input[type=password] {
+/*  width: 50%;
+  padding: 15px;
+  margin: 15px 15px;
+  display: inline-block;
+  border: 5px;
+  background: #f1f1f1;*/
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid white;
+  margin-bottom: 25px;
+}
+
+button #selectRoute {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+
+.cancelbtn, .signupbtn {
+    float: left;
+    /*width: 50%;*/
+    /*padding: 14px 20px;*/
+}
+.cancelbtn{
+  background-color: #f44336;
+}
+.signupbtn{
+  background-color: green;
+}
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+/*form page*/
+.boxed{
+  /*filter: blur(2px);*/
+/**//*
+  border: 4px inset grey;*/
+  width:100%;
+  text-align: center;
+  background-color: rgba(121,205,215,0.4);/*
+  margin: 160px;*/
+  color: white;
+    text-align: center;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+      0px 8px 13px rgba(0,0,0,0.1),
+      0px 18pc 23px rgba(0,0,0,0.1),
+}
+
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+}
+h2, h3{
+  text-align: center;
+  color: white;//This doesn't do anything/*
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+  0px 8px 13px rgba(0,0,0,0.1),
+  0px 18pc 23px rgba(0,0,0,0.1),*/
+}
+
+h1, h4, h5{
+  color: white;
+  padding: 10px;
+}
+
+.card-body h3, .card-body h4, .card-body h5{
+  color: black;
+  padding: 10px;
+}
+
+.card h3{
+  color: black;
+  padding: 10px;
+}
+
+.card-body{
+  min-height: 100px;
+  padding: 0px;
+}
+
+.bus-card-seg{
+  border-bottom: 1px solid lightgrey;
+  width: 100%;
+  padding: 10px;
+}
+
+#mapwindow{
+  color: red;
+
+}
+.bus-card-seg button{
+  float: right;
+}
+
+.card-footer button{
+  float: right;
+}
+
+.Grid-container2{
+  display: inline-grid;
+  grid-template-columns: auto auto auto auto auto;
+  padding: 50px 10px;
+  margin: auto;
+  padding-left: 400px;
+
+}
+
+#image{
+  height: 110px;
+  width: 110px;
+}
+
+#image{
+  height: 110px;
+  width: 110px;
+}
+
+.button-message{
+  display: inline;
+  visibility: hidden;
+  color: white;
+  background-color: #cc0000;
+  margin-left: 15px;
+  border-radius: 3px;
+  padding:5px;
+}
+
+#user-timetable-interaction{
+     width:100%;
+     text-align: left;
+    padding: 10px;
+}
